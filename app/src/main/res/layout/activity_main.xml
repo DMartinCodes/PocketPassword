@@ -25,16 +25,30 @@
 
     <TextView
         android:id="@+id/passwordView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="321dp"
+        android:layout_height="127dp"
         android:layout_marginBottom="316dp"
+        android:gravity="center"
         android:textColor="@color/carabiner_green"
         android:textFontWeight="@integer/material_motion_duration_medium_1"
+        android:textSize="27sp"
+        android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/generateButton"
-        app:layout_constraintVertical_bias="0.189"
-        android:textStyle="italic"/>
+        app:layout_constraintVertical_bias="0.297" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="359dp"
+        android:layout_height="97dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.942"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.998"
+        app:srcCompat="@drawable/lowerlogo1" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
