@@ -19,21 +19,28 @@ public class generate {
         int min = 1;
 
         String passWord = "";
-        int y = (int)Math.floor(Math.random() * (upperMax - min + 1) + min);
-        passWord += upperAlpha.charAt(y);
 
         while(passWord.length() < 8){
-            int x = (int)Math.floor(Math.random() * (lowerMax - min + 1) + min);
-            passWord += lowerAlpha.charAt(x);
+            if(passWord.length() % 2 == 0) {
+                int x = (int) Math.floor(Math.random() * (lowerMax - min + 1) + min);
+                passWord += lowerAlpha.charAt(x);
+            } else {
+                int z = (int)Math.floor(Math.random() * (digitMax - min + 1) + min);
+                passWord += digits.charAt(z);
+            }
         }
 
-        for(int i = 0; i < 2; i++){
-            int z = (int)Math.floor(Math.random() * (digitMax - min + 1) + min);
-            passWord += digits.charAt(z);
+        for(int i = 0; i < 7; i++){
+            if(i % 2 == 0) {
+                int x = (int) Math.floor(Math.random() * (upperMax - min + 1) + min);
+                passWord += upperAlpha.charAt(x);
+            } else {
+                int z = (int)Math.floor(Math.random() * (specMax - min + 1) + min);
+                passWord += specChars.charAt(z);
+            }
         }
 
-        int w = (int)Math.floor(Math.random() * (specMax - min + 1) + min);
-        passWord += specChars.charAt(w);
+
 
 
         return passWord;
