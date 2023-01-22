@@ -22,20 +22,20 @@ public class generate {
 
         while(passWord.length() < 8){
             if(passWord.length() % 2 == 0) {
-                int x = (int) Math.floor(Math.random() * (lowerMax - min + 1) + min);
+                int x = (int) Math.floor(Math.random() * (lowerMax - min) + min);
                 passWord += lowerAlpha.charAt(x);
             } else {
-                int z = (int)Math.floor(Math.random() * (digitMax - min + 1) + min);
+                int z = (int)Math.floor(Math.random() * (digitMax - min) + min);
                 passWord += digits.charAt(z);
             }
         }
 
         for(int i = 0; i < 7; i++){
             if(i % 2 == 0) {
-                int x = (int) Math.floor(Math.random() * (upperMax - min + 1) + min);
+                int x = (int) Math.floor(Math.random() * (upperMax - min) + min);
                 passWord += upperAlpha.charAt(x);
             } else {
-                int z = (int)Math.floor(Math.random() * (specMax - min + 1) + min);
+                int z = (int)Math.floor(Math.random() * (specMax - min) + min);
                 passWord += specChars.charAt(z);
             }
         }

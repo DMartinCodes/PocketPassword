@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     String password = newPass.genPass();
-                    text.setText(password);
+                    text.setText("Your new secure password is: \n \n" + password);
                 }
 
 

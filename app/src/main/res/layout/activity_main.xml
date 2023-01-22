@@ -4,14 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/slate"
+    android:background="@color/chocolate"
     tools:context=".MainActivity">
 
 
     <Button
         android:id="@+id/generateButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="283dp"
+        android:layout_height="79dp"
+        android:backgroundTint="@color/carabiner_green"
+        android:onClick="showPass"
         android:text="Click to Generate Password"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -19,14 +21,15 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.134"
-        android:onClick="showPass" />
+        app:layout_constraintVertical_bias="0.134" />
 
     <TextView
         android:id="@+id/passwordView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="316dp"
+        android:textColor="@color/carabiner_green"
+        android:textFontWeight="@integer/material_motion_duration_medium_1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
