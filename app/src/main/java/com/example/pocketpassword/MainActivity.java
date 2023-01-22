@@ -3,10 +3,14 @@ package com.example.pocketpassword;
 import androidx.appcompat.app.AppCompatActivity;
 
 
+import android.content.ClipData;
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.content.ClipboardManager;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,8 +31,15 @@ public class MainActivity extends AppCompatActivity {
             new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
+                    ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
+
                     String password = newPass.genPass();
                     text.setText("Your new secure password is: \n \n" + password);
+
+                    ClipData clip = ClipData.newPlainText("", password);
+                    clipboard.setPrimaryClip(clip);
+
+                    Toast.makeText(MainActivity.this, "Password Copied to Clipboard", Toast.LENGTH_SHORT).show();
                 }
 
 

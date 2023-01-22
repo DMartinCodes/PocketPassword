@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="chocolate">#424242</color>
     <color name="carabiner_green">#66bb6a</color>
+    <color name="chocolate_dark">#3a3b3c</color>
 </resources>
