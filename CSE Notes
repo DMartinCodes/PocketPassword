@@ -1,0 +1,11 @@
+15 chars in length
+passphrase (4+ words and separators)
+CCCS ITSAP.30.032
+NIST 800-63B
+Use existing password hashing techniques
+SMS is not great, but acceptable
+CCCS ITSAP.00.101
+
+
+SALT password -> adds random values prior to actual hash to add variability
+Bcrypt hashing algorithm
