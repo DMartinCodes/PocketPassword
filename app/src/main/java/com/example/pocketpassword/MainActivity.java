@@ -20,8 +20,18 @@ public class MainActivity extends AppCompatActivity {
 
     public void showPass(View view){
         generate newPass = new generate();
+        TextView text = (TextView) findViewById(R.id.passwordView);
+        Button passButton = (Button) findViewById(R.id.generateButton);
+        passButton.setOnClickListener(
+            new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    String password = newPass.genPass();
+                    text.setText(password);
+                }
 
-        System.out.println(newPass.genPass());
+
+            });
     }
 
 
