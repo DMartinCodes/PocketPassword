@@ -11,6 +11,13 @@ public class generatePhrase {
             "livre", "maison", "maman", "mer", "miel", "neige", "noir", "nuit", "oeil", "oiseau", "or", "pain", "pays", "petit", "pomme", "poule", "poussin", "prairie", "rouge", "soleil", "tigre", "toi", "train", "verre", "vert", "ville"
     };
 
+    String[] hardWords = {"skein", "whorl", "glebe", "fathom", "wend", "glim", "jape", "hight", "luff", "suss", "natch", "sengi", "bield", "lagan", "smirch", "nurd", "firkin", "dowse", "shive", "wamus",
+            "nubbin", "flux", "gleam", "whiff", "flack", "gaff", "nosh", "grit", "jolt", "mizzle", "snick", "whirr", "scuff", "scud", "scamper", "scuff", "scour", "scrimp", "scuff", "scuff"
+            "flair", "flux", "grog", "joie", "joule", "jupon", "moue", "nuage", "nouer", "pouce", "quiche", "quirite", "roustir", "sable", "tache", "vogue", "voilure", "yacht", "zeste"
+            "embestir", "esbaratar", "estrangular", "estrujar", "excarcelar", "exclamar", "excusar", "exhalar", "exiliar", "exorcizar", "expulsar", "exultar"
+            
+    }
+
     char[] nums = {'0','1','2','3','4','5','6','7','8','9'};
     char[] specChars = {'!', '"', '#',
             '$', '%', '&', '(', ')', '*', '+', ',', '-', '.',
